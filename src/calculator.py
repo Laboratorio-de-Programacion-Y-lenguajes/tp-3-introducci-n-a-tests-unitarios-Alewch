@@ -64,3 +64,17 @@ def mean(values: list[float]) -> float:
     if not values:
         raise ValueError("mean() requiere una lista no vacía")
     return sum(values) / len(values)
+
+def suma_numeros_negativos(num_one: int, num_two: int ) :    
+    return num_one+num_two
+    
+def sum_negativo_positivo(num_one: int, num_two: int) :
+    return num_one+num_two
+
+def sumar_con_cero(num_one: int, num_two: int) :
+    return num_one+num_two
+
+def sumar_num_decimales(num_flone: float, num_fltwo: float):
+    return num_flone+num_fltwo
+
+    
