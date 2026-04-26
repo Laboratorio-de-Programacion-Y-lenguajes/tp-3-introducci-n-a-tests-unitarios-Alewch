@@ -19,3 +19,14 @@ def test_sub_resta_positivos():
 #   - Restar dos números decimales (float)
 #
 # Pista: podés usar @pytest.mark.parametrize para probar varios casos a la vez.
+def test_sub_resultado_negativo():
+    assert sub(2, 5) == -3
+
+def test_sub_cero():
+    assert sub(10, 0) == 10
+
+def test_sub_dos_negativos():
+    assert sub(-5, -2) == -3
+
+def test_sub_decimales():
+    assert sub(3.5, 1.2) == pytest.approx(2.3)
