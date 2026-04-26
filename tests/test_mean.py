@@ -23,3 +23,15 @@ def test_mean_lista_simple():
 # def test_mean_lista_vacia():
 #     with pytest.raises(ValueError):
 #         mean([])
+def test_list_uno():
+    assert mean([1]) == 1
+
+def test_num_negatives():
+    assert mean([-1,-2,-3]) == -2
+
+def test_num_decimales():
+    assert mean([1.5, 3.5]) == 2.5
+    
+def test_list_vacia():
+    with pytest.raises(ValueError):
+        assert mean ([]) == 0
